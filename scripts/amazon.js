@@ -67,7 +67,7 @@ document.querySelectorAll('.js-add-to-cart')
       cart.forEach((item) => {
         if (productId === item.productId) {
           matchingItem = item;
-        }
+        } 
       });
 
       if (matchingItem) {
