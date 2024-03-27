@@ -12,7 +12,7 @@ cart.forEach((CartItem) => {
     products.forEach((product)=>{
         if(product.id === productId)
         {
-            matchingProduct
+            matc
         }
     })
   `
