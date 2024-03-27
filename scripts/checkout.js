@@ -5,6 +5,16 @@ import { products } from "../data/products.js";
 cart.forEach((CartItem) => {
 
     const productId = CartItem.productId;
+
+
+    let matchingProduct;
+
+    products.forEach((product)=>{
+        if(product.id === productId)
+        {
+            matchingProduct
+        }
+    })
   `
     <div class="cart-item-container">
     <div class="delivery-date">
