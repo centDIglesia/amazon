@@ -11,6 +11,8 @@ import {
   getDeliveryOption,
 } from "../../data/deliveryOption.js";
 
+import { renderPaymentSummary } from "./paymentSummary.js";
+
 const today = dayjs();
 
 export function renderOrederSummary() {
@@ -138,6 +140,7 @@ export function renderOrederSummary() {
       );
 
       container.remove();
+      renderPaymentSummary();
     });
   });
 
@@ -146,6 +149,7 @@ export function renderOrederSummary() {
       const { productId, deliveryOptionId } = element.dataset;
       updateDeliveryOption(productId, deliveryOptionId);
       renderOrederSummary();
+      renderPaymentSummary();
     });
   });
 }
